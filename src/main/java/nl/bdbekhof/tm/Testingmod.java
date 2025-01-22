@@ -2,7 +2,7 @@ package nl.bdbekhof.tm;
 
 import net.fabricmc.api.ModInitializer;
 
-import nl.bdbekhof.tm.items.ModItems;
+import nl.bdbekhof.tm.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
