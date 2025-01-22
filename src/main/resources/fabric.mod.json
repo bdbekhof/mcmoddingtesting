@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "testingmod",
+	"version": "${version}",
+	"name": "testingmod",
+	"description": "This mod is all about testing what I can do with Minecraft!",
+	"authors": [
+		"Brian Bekhof - ShoarmaKarma"
+	],
+	"contact": {
+		"homepage": "https://bdbekhof.nl",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/testingmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nl.bdbekhof.tm.Testingmod"
+		],
+		"client": [
+			"nl.bdbekhof.tm.TestingmodClient"
+		]
+	},
+	"mixins": [
+		"testingmod.mixins.json",
+		{
+			"config": "testingmod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
