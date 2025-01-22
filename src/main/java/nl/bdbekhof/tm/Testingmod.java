@@ -16,7 +16,8 @@ public class Testingmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		LOGGER.info("Initiliazing mod items");
 		ModItems.initiliaze();
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Mod items initialized!");
 	}
 }
